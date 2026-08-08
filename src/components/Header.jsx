@@ -13,7 +13,7 @@ export default function Header({ totalCount, categoryCount, searchValue, onSearc
           <span className={styles.logoDot} />
           NewsHub
         </a>
-        <span className={styles.liveBadge}>Live</span>
+  
         <button className={styles.hamburger} onClick={onMenuToggle} title="Filters">
           {menuOpen ? '✕' : '☰'}
         </button>
