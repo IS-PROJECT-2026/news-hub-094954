@@ -20,4 +20,13 @@ db.pragma("foreign_keys = ON");
 const schema = fs.readFileSync(SCHEMA_PATH, "utf-8");
 db.exec(schema);
 
+// Lightweight migration: CREATE TABLE IF NOT EXISTS only applies to brand-new
+// databases, so an already-existing news-hub.sqlite3 won't pick up new
+// columns automatically. Add them here if missing.
+const articleColumns = db.prepare(`PRAGMA table_info(articles)`).all();
+const hasImageUrl = articleColumns.some((col) => col.name === "image_url");
+if (!hasImageUrl) {
+  db.exec(`ALTER TABLE articles ADD COLUMN image_url TEXT`);
+}
+
 export default db;
