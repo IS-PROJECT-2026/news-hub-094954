@@ -10,8 +10,7 @@
 
 ## 2. Deployed Portfolio Link
 
-- **Live GitHub Pages URL:** [Paste your live deployment link here]
-  *(Example: https://is-project-2026.github.io/hospital-management-138141/)*
+- **Live GitHub Pages URL:** 
 
 ---
 
@@ -35,38 +34,26 @@ List at least **four key concepts or skills** you learned during the Git crash c
 
 ## 4. Screenshots of Key GitHub Features
 
-Demonstrate your workflow mechanics by embedding your screenshots below. 
-
-> **CRITICAL FOR FLOATING AND WORKING IMAGES:** Do not type manual folder paths! To prevent broken images, edit this file directly on the GitHub web interface, click on the blank line below each prompt, and **paste (Ctrl+V / Cmd+V)** your screenshot. GitHub will automatically upload the file and generate a permanent, working image link for you.
-
 ### A. Milestones and Issues
-*Provide a screenshot showing your active milestone(s) and the granular tracking issues linked directly to them.*
+<img width="1185" height="429" alt="Screenshot 2026-08-09 at 18 22 54" src="https://github.com/user-attachments/assets/f1c03f11-5976-43bf-84b4-b7d141f5dc0f" />
 
-[PASTE YOUR MILESTONE SCREENSHOT DIRECTLY HERE]
-
-* **Caption:** [Write a brief sentence describing your milestones here]
+* **Caption:** This screenshot shows the closed milestones and their linked development issues.
 
 ### B. Project Board
-*Provide a screenshot of your GitHub Project Board with your issues organized dynamically across columns (To Do, In Progress, Done).*
+<img width="1438" height="832" alt="Screenshot 2026-08-09 at 18 31 41" src="https://github.com/user-attachments/assets/c0168c1c-16d4-4d00-bac7-89a7f522baeb" />
 
-[PASTE YOUR PROJECT BOARD SCREENSHOT DIRECTLY HERE]
-
-* **Caption:** [Write a brief sentence describing your board state here]
+* **Caption:** This screenshot shows the GitHub Kanban board with issues progressing through the To Do, In Progress, and Done columns.
 
 ### C. Branching Architecture
-*Provide a screenshot showing your local or remote Git branch list, highlighting your use of conventional, issue-linked naming patterns (e.g., `feat/`, `fix/`, `style/`).*
+<img width="1308" height="517" alt="Screenshot 2026-08-09 at 18 33 53" src="https://github.com/user-attachments/assets/0fe079e4-0d1b-41c2-b70d-6c5184ba324d" />
 
-[PASTE YOUR BRANCHING SCREENSHOT DIRECTLY HERE]
-
-* **Caption:** [Write a brief sentence describing your branch list here]
+* **Caption:** This screenshot shows the project's branches following the required naming conventions
 
 ### D. Pull Requests & Traceability
-*Provide a screenshot of a completed or open Pull Request (PR) on GitHub that clearly shows it is linked to a related development issue.*
+<img width="1437" height="766" alt="Screenshot 2026-08-09 at 18 39 43" src="https://github.com/user-attachments/assets/c19266a6-be95-4ee2-bfa9-9698af65a7e1" />
 
-[PASTE YOUR PULL REQUEST SCREENSHOT DIRECTLY HERE]
-
-* **Caption:** [Write a brief sentence describing your PR and what issue it closes]
-
+* **Caption:** This screenshot shows a closed pull request linked to its corresponding GitHub issue that is being merged into the main branch.
+  
 ---
 
 ## 5. The Merge Conflict Chronology
@@ -74,29 +61,18 @@ Demonstrate your workflow mechanics by embedding your screenshots below.
 To demonstrate your ability to handle git collisions and protect production code, paste the **three sequential screenshots** tracking your engineered merge conflict from start to finish.
 
 ### Step 1: Generating the Clash
-*Provide a screenshot showing the moment you attempted to merge two conflicting branches modifying the same line of code.*
+<img width="614" height="69" alt="• esthermutuagEstherss-MacBook-Air news-hub   git merge branch-A" src="https://github.com/user-attachments/assets/c32ebed9-0159-4a55-a81d-c032b9e332d9" />
 
-[PASTE SCREENSHOT OF ATTEMPTED MERGE / TERMINAL WARNING HERE]
-
-* **Caption:** [Describe which two branches collided and the conflict warning received]
-
+* **Caption:** This screenshot shows the merge conflict that occurred between branch B and A when they modifies the same line in the authRoutes page
+  
 ### Step 2: Inside the Code Editor (Native Conflict Markers)
-*Provide your visual evidence showing the raw, unresolved conflict markers (`<<<<<<< HEAD`, `=======`, and `>>>>>>>`) inside your local code editor.*
+<img width="648" height="158" alt="oe Acceot Incoming Change Accent Roth Changes I Comeare Changer" src="https://github.com/user-attachments/assets/331c3aa0-894d-4954-b1eb-007e66da89cc" />
 
-[PASTE SCREENSHOT OF RAW VS CODE CONFLICT MARKERS HERE]
-
-* **Caption:** [Explain what line of code caused the dispute and your technical reasoning for choosing the final version]
+* **Caption:** This screenshot shows the conflict displayed in VS Code before resolving the conflict. I reviewed the versions and selected the appropriate final implementation.
 
 ### Step 3: Resolution & Clean Merge Log
-*Provide a screenshot of your clean Git history, network graph, or a successfully completed pull request showing that the conflict was resolved safely, committed, and merged cleanly into the main branch.*
+<img width="667" height="284" alt="• Outcoina Changes main" src="https://github.com/user-attachments/assets/f60dfba1-5ef6-4252-9fce-eab15730b7a3" />
 
-[PASTE SCREENSHOT OF CLEAN UNIFIED HISTORICAL GRAPH HERE]
-
-* **Caption:** [Describe the final state of the unified file on the main branch]
+* **Caption:** This screenshot shows the resolution of the merge conflict, the clean Git history.
 
 ---
-
-## 6. Feedback & Evaluation 
-
-To help improve this course for future engineering cohorts, please take 2 minutes to fill out the anonymous feedback form. Your honest review helps shape how this program is taught next semester!
-- [ ] **Anonymous Evaluation Form:** [Course & Instructor Evaluation](https://forms.gle/YLybnsyXXErKEg3s9)
