@@ -10,7 +10,7 @@
 
 ## 2. Deployed Portfolio Link
 
-- **Live GitHub Pages URL:** 
+- **Live GitHub Pages URL:** https://is-project-2026.github.io/news-hub-094954
 
 ---
 
