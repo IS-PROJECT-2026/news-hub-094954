@@ -26,19 +26,8 @@ A full-stack news hub application with user authentication and full CRUD article
 - bcrypt for password hashing
 
 ## Project Structure
-news-hub/
-├── src/ # Frontend
-│ ├── components/ # Header, LoginModal, ArticleCard, ArticleModal, ArticleForm, Sidebar, Pagination, SkeletonCard
-│ ├── context/ # AppContext — auth + article state
-│ ├── hooks/ # useArticleFilters — search/category/sort/pagination
-│ ├── services/ # authApi, articlesApi — talk to the backend
-│ └── utils/ # helpers (date formatting, avatar colors)
-└── server/ # Backend
-├── db/ # schema.sql, connection.js, init.js
-├── models/ # userModel, articleModel
-├── controllers/ # authController, articleController
-├── middleware/ # auth.js (JWT guard)
-└── routes/ # authRoutes, articleRoutes
+<img width="848" height="265" alt="Screenshot 2026-08-10 at 18 45 41" src="https://github.com/user-attachments/assets/1343e93b-0e01-425e-bf02-925d19f79e27" />
+
 
 ## Getting Started
 
@@ -51,12 +40,9 @@ cp .env.example .env
 ```
 
 Edit `server/.env`:
-PORT=5000
-JWT_SECRET=change_this_to_a_long_random_string
-JWT_EXPIRES_IN=7d
-CLIENT_URL=http://localhost:5173
 
-> **Note:** On macOS, port `5000` may be occupied by AirPlay Receiver (Control Center). If you get `EADDRINUSE`, either change `PORT` here (and the frontend's `VITE_API_URL` to match) or disable AirPlay Receiver in System Settings → General → AirDrop & Handoff.
+
+<img width="412" height="102" alt="Screenshot 2026-08-10 at 18 54 14" src="https://github.com/user-attachments/assets/f7658772-e7a9-476e-b7ca-d822b657b9d5" />
 
 Start the backend:
 ```bash
