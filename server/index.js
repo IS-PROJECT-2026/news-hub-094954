@@ -6,6 +6,7 @@ import articleRoutes from "./routes/articleRoutes.js";
 
 // Importing this establishes the DB connection and applies schema.sql
 import "./db/connection.js";
+import "./db/seed.js";
 
 const app = express();
 
