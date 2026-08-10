@@ -2,6 +2,8 @@
 
 A full-stack news hub application with user authentication and full CRUD article management. Built with Vite + React on the frontend and Express + SQLite on the backend.
 
+<a href="https://is-project-2026.github.io/news-hub-094954/" target="_blank"><b>Find My Project Here</b></a>
+
 ## Features
 
 - User registration and login with JWT authentication
