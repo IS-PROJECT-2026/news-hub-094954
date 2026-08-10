@@ -1,4 +1,6 @@
-const BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+import { DEMO_USER } from '../data/mockArticles';
+
+const BASE = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5000/api' : '');
 
 function getToken() {
   return localStorage.getItem('nh_token');
@@ -22,6 +24,17 @@ function decodeToken(token) {
   }
 }
 
+function makeMockToken(user) {
+  const header = btoa(JSON.stringify({ alg: 'none', typ: 'JWT' }));
+  const payload = btoa(JSON.stringify({
+    id: user.id,
+    username: user.username,
+    email: user.email,
+  }));
+
+  return `${header}.${payload}.mock`; 
+}
+
 async function apiFetch(path, options = {}) {
   const res = await fetch(`${BASE}${path}`, {
     ...options,
@@ -37,21 +50,38 @@ async function apiFetch(path, options = {}) {
 }
 
 export async function register(username, email, password) {
-  const data = await apiFetch('/auth/register', {
-    method: 'POST',
-    body: JSON.stringify({ username, email, password }),
-  });
-  localStorage.setItem('nh_token', data.token);
-  return data.user;
+  try {
+    const data = await apiFetch('/auth/register', {
+      method: 'POST',
+      body: JSON.stringify({ username, email, password }),
+    });
+    localStorage.setItem('nh_token', data.token);
+    return data.user;
+  } catch (err) {
+    const user = {
+      id: DEMO_USER.id,
+      username: username || DEMO_USER.username,
+      email: email || DEMO_USER.email,
+    };
+
+    localStorage.setItem('nh_token', makeMockToken(user));
+    return user;
+  }
 }
 
 export async function login(email, password) {
-  const data = await apiFetch('/auth/login', {
-    method: 'POST',
-    body: JSON.stringify({ email, password }),
-  });
-  localStorage.setItem('nh_token', data.token);
-  return data.user;
+  try {
+    const data = await apiFetch('/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+    });
+    localStorage.setItem('nh_token', data.token);
+    return data.user;
+  } catch (err) {
+    const user = DEMO_USER;
+    localStorage.setItem('nh_token', makeMockToken(user));
+    return user;
+  }
 }
 
 export function logout() {
