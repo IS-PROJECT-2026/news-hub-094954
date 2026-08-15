@@ -87,7 +87,7 @@
 
 **What cause did you use?** One branch modified a file while another branch deleted it.
 
-**Why does this cause trigger a conflict?** [1–2 sentences explaining the mechanism]
+**Why does this cause trigger a conflict?** The branch conflict-2-delete deleted submission.md , while conflict-2-modify updated the same file. Git could not automatically determine whether the file should be deleted or retained,
 
 [PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 2 HERE]
 
