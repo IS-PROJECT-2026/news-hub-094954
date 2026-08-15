@@ -87,11 +87,11 @@
 
 **What cause did you use?** One branch modified a file while another branch deleted it.
 
-**Why does this cause trigger a conflict?** [1–2 sentences explaining the mechanism]
+**Why does this cause trigger a conflict?** The branch conflict-2-delete deleted submission.md , while conflict-2-modify updated the same file. Git could not automatically determine whether the file should be deleted or retained,
 
-[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 2 HERE]
+<img width="1193" height="354" alt="Screenshot 2026-08-15 at 19 40 54" src="https://github.com/user-attachments/assets/df488a91-80fb-4622-ab44-2858eb7abd10" />
 
-* **Caption:** [Brief description of the conflicting branches and file]
+* **Caption:**  When rebasing conflict-2-modify onto conflict-2-delete, git reported a modify/delete conflict. Since this was a file-operation conflict, I decided to resolve the conflict by retaining the modified version and committing that.
 
 ---
 
