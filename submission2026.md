@@ -87,22 +87,22 @@
 
 **What cause did you use?** One branch modified a file while another branch deleted it.
 
-**Why does this cause trigger a conflict?** The branch conflict-2-delete deleted submission.md , while conflict-2-modify updated the same file. Git could not automatically determine whether the file should be deleted or retained,
+**Why does this cause trigger a conflict?** The branch `conflict-2-delete` deleted `submission.md` , while `conflict-2-modify` updated the same file. Git could not automatically determine whether the file should be deleted or retained,
 
 <img width="1193" height="354" alt="Screenshot 2026-08-15 at 19 40 54" src="https://github.com/user-attachments/assets/df488a91-80fb-4622-ab44-2858eb7abd10" />
 
-* **Caption:**  When rebasing conflict-2-modify onto conflict-2-delete, git reported a modify/delete conflict. Since this was a file-operation conflict, I decided to resolve the conflict by retaining the modified version and committing that.
+* **Caption:**  When rebasing `conflict-2-modify` onto `conflict-2-delete`, git reported a modify/delete conflict. Since this was a file-operation conflict, I decided to resolve the conflict by retaining the modified version and committing that.
 
 ---
 
 ### Conflict 3 — File Names 
 
-**What cause did you use?** Moving a file in one branch while editing it in another creates a conflict 
+**What cause did you use?** Renaming one file in different branches creates a conflict 
 
-**Why does this cause trigger a conflict?** [1–2 sentences explaining the mechanism]
+**Why does this cause trigger a conflict?** The branch `29-conflict-3-rename-branch-A` renames the `submission.md` file to `submission2026.md` and then branch `29-conflict-3-rename-branch-B` renames the file to `submissionfile.md` 
 
-[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 3 HERE]
+<img width="1211" height="384" alt="Screenshot 2026-08-15 at 20 16 25" src="https://github.com/user-attachments/assets/855293e5-813d-4d5e-86c7-9606f31f6d5c" />
 
-* **Caption:** [Brief description of the conflicting branches and file]
+* **Caption:** The conflict deleted the original file and created two new files` submission2026.md` and `submissionfile.md`. This was resolved by renaming the `submission2026.md` to `submission.md` and deleting `submissionfile.md`
 
 ---
