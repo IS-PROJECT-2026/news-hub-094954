@@ -24,7 +24,7 @@
 ### B. A Mistake or Struggle
 
 - **Link to the evidence:** https://github.com/IS-PROJECT-2026/news-hub-094954/pull/12/commits
-- **What happened and how did you recover?** I was trying to create a merge conflict between branches and ended up with several commits that were not written as per the given convention. In future commits I either ammended or rebased to ensure they were right.
+- **What happened and how did you recover?** I was trying to create a merge conflict between branches and ended up with several commits that were not written as per the given convention. In future commits, I would create a separate issue and to ensure they were right.
 
 ### C. A Pull Request You're Proud Of
 
@@ -62,7 +62,9 @@
 
 ## 5. The Merge Conflict Chronology
 
-To demonstrate your ability to handle git collisions and protect production code, paste the **three sequential screenshots** tracking your engineered merge conflict from start to finish.
+### Conflict 1 — Full Chronology
+
+**What cause did you use?** Two branches editing the same line.
 
 ### Step 1: Generating the Clash
 <img width="614" height="69" alt="• esthermutuagEstherss-MacBook-Air news-hub   git merge branch-A" src="https://github.com/user-attachments/assets/c32ebed9-0159-4a55-a81d-c032b9e332d9" />
@@ -78,5 +80,29 @@ To demonstrate your ability to handle git collisions and protect production code
 <img width="667" height="284" alt="• Outcoina Changes main" src="https://github.com/user-attachments/assets/f60dfba1-5ef6-4252-9fce-eab15730b7a3" />
 
 * **Caption:** This screenshot shows the resolution of the merge conflict, the clean Git history.
+
+---
+
+### Conflict 2 — Modify Vs Delete 
+
+**What cause did you use?** One branch modified a file while another branch deleted it.
+
+**Why does this cause trigger a conflict?** [1–2 sentences explaining the mechanism]
+
+[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 2 HERE]
+
+* **Caption:** [Brief description of the conflicting branches and file]
+
+---
+
+### Conflict 3 — File Names 
+
+**What cause did you use?** Moving a file in one branch while editing it in another creates a conflict 
+
+**Why does this cause trigger a conflict?** [1–2 sentences explaining the mechanism]
+
+[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 3 HERE]
+
+* **Caption:** [Brief description of the conflicting branches and file]
 
 ---
