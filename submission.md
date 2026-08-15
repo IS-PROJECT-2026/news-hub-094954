@@ -14,22 +14,26 @@
 
 ---
 
-## 3. Learnings from the Git Crash Program
+## 3. Reflection — Grounded in Your Git History
 
-List at least **four key concepts or skills** you learned during the Git crash course. For each one, write a brief explanation of how it helped you manage your portfolio project more effectively.
+### A. Your Best Commit
 
-* **Concept 1: Merge Conflict Resolution**
-  * *How it helped me:* I learned how merge conflicts occur when different branches modify the same part of a file. This helped me understand how to safely combine changes and maintain the correct version of my News Hub project.
+- **Commit URL:** https://github.com/IS-PROJECT-2026/news-hub-094954/pull/9/commits
+- **Why this one?** It uses the imperative and conventional feat type with a clear, specific subject, and the body explains the main changes while referencing the related issue (Closes #7). 
 
-* **Concept 2: Branching**
-  * *How it helped me:* I learned how to create separate feature branches for different tasks instead of making changes directly to the main branch. This helped me keep my News Hub project organized and allowed me to work on features independently without affecting the stable version of the system.
+### B. A Mistake or Struggle
 
-* **Concept 3: Conventional Commits**
-  * *How it helped me:* I learned how to write clear and consistent commit messages using types such as feat and docs. This made the history of my News Hub project easier to understand and helped me track what changes were made and why.
+- **Link to the evidence:** https://github.com/IS-PROJECT-2026/news-hub-094954/pull/12/commits
+- **What happened and how did you recover?** I was trying to create a merge conflict between branches and ended up with several commits that were not written as per the given convention. In future commits, I would create a separate issue and to ensure they were right.
 
-* **Concept 4: Pull Requests**
-  * *How it helped me:* I learned how to create pull requests when completing work on a feature branch and review the changes before merging them into main. This helped me follow a more professional development workflow and ensured that the main branch remained stable.
+### C. A Pull Request You're Proud Of
 
+- **PR URL:** https://github.com/IS-PROJECT-2026/news-hub-094954/pull/16
+- **What did you check before merging?** I reviewed the PR description to confirm that it clearly explained the deployment changes and correctly linked to the relevant issue. I also checked the diff to make sure the changes to package.json and submission.md matched the stated deployment requirements and were consistent with the purpose of the PR.
+
+### D. One Thing You Would Do Differently
+- **Link to the evidence of the original decision:** https://github.com/IS-PROJECT-2026/news-hub-094954/pull/16/commits
+- **What would you change?** Establish a commit convection for my project in terms of scope at the same time I was defining the mislestones so that all the commit messages would match. I reliased later that in some commits, the scope was easier to define that others.
 ---
 
 ## 4. Screenshots of Key GitHub Features
@@ -58,7 +62,9 @@ List at least **four key concepts or skills** you learned during the Git crash c
 
 ## 5. The Merge Conflict Chronology
 
-To demonstrate your ability to handle git collisions and protect production code, paste the **three sequential screenshots** tracking your engineered merge conflict from start to finish.
+### Conflict 1 — Full Chronology
+
+**What cause did you use?** Two branches editing the same line.
 
 ### Step 1: Generating the Clash
 <img width="614" height="69" alt="• esthermutuagEstherss-MacBook-Air news-hub   git merge branch-A" src="https://github.com/user-attachments/assets/c32ebed9-0159-4a55-a81d-c032b9e332d9" />
@@ -74,5 +80,29 @@ To demonstrate your ability to handle git collisions and protect production code
 <img width="667" height="284" alt="• Outcoina Changes main" src="https://github.com/user-attachments/assets/f60dfba1-5ef6-4252-9fce-eab15730b7a3" />
 
 * **Caption:** This screenshot shows the resolution of the merge conflict, the clean Git history.
+
+---
+
+### Conflict 2 — Modify Vs Delete 
+
+**What cause did you use?** One branch modified a file while another branch deleted it.
+
+**Why does this cause trigger a conflict?** [1–2 sentences explaining the mechanism]
+
+[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 2 HERE]
+
+* **Caption:** [Brief description of the conflicting branches and file]
+
+---
+
+### Conflict 3 — File Names 
+
+**What cause did you use?** Moving a file in one branch while editing it in another creates a conflict 
+
+**Why does this cause trigger a conflict?** [1–2 sentences explaining the mechanism]
+
+[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 3 HERE]
+
+* **Caption:** [Brief description of the conflicting branches and file]
 
 ---
